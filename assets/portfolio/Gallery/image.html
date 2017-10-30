@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<!-- Bootstrap needs to come before alternate css file so we can overwrite the Bootstrap with it. -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<!-- One thing to note with this container on line 10, it is placed INSIDE of the nav element so that it only puts margin on the content(links) of the navbar, and not the navbar itself(meaning the background of the navbar). -->
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Hamburger collapse example -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse-demo" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+	      		</button>
+
+				<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> IMGS</a>
+			</div>
+			<!-- Note that the ID from the navbar collapse MUST match the data-target from above. Only the data-target includes the #, the id below does not. -->
+			<div class="collapse navbar-collapse" id="nav-collapse-demo">
+				<div class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> The Image Gallery</h1>
+			<p>A bunch of beautiful images that I didn't take(except for the first one!)</p>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+				<img src="https://source.unsplash.com/X0OoHrPvgXE">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+  <!-- JQuery needs to load before JS -->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

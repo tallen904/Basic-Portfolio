@@ -1,0 +1,35 @@
+body {
+	border: 20px solid #bdc3c7;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 20px;
+	font-family: source sans pro;
+}
+
+.divs {
+	border-left: 7px solid #bdc3c7;
+	padding-left: 5px;
+}
+
+.date {
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+
+h2 {
+	color: #2c3e50;
+	font-size: 40px;
+}
+
+#border {
+	border-bottom: 3px solid #f1f1f1;
+}
+
+
+/* border color: #bdc3c7
+   date color: #3498db
+   h2 color: #2c3e50
+   font: source sans pro (get from google fonts)
+*/
