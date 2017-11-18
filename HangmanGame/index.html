@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+	
+	<div>Press any key to get started!</div>
+	
+	<div id="wins">Wins: </div>
+
+	<div>Current Word
+		<div id="currentWord"></div>
+	</div>
+
+	<div>Guesses Remaining
+		<div id="guessesLeft"></div>
+	</div>
+
+	<div>Letters Already Guessed
+		<div id="lettersGuessed"></div>
+	</div>
+
+	<form id="guessSubmit">
+		<input type="text" maxlength="1" minlength="1" name="letter" id="letter" placeholder="Guess a letter" />
+    	<input id="guess" name="guess" type="submit" value="Guess" />
+   		<button id="restart" name="restart" type="button">Restart</button>
+	</form>
+
+<script type="text/javascript" src="./assets/game.js"></script>
+</body>
+</html>
