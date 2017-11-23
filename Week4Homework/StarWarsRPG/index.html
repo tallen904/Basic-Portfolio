@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars RPG</title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+</head>
+<body>
+
+	<h1>Star Wars RPG!</h1>
+
+	<div id="characterPickerDiv" class="character">
+		
+		<div id="obiWan" class="imgDiv kenobiDiv"><img src="./assets/images/obiwan.jpg"><p class="characterHealth">175</p></div>
+		<div id="jarJarBinks" class="imgDiv binksDiv"><img src="./assets/images/jarjarbinks.jpg"><p class="characterHealth">185</p></div>
+		<div id="darthVader" class="imgDiv vaderDiv"><img src="./assets/images/vader.jpg"><p class="characterHealth">200</p></div>
+		<div id="generalGrevious" class="imgDiv greviousDiv"><img src="./assets/images/grevious.jpeg"><p class="characterHealth">125</p></div>
+		<div class="imgSpacer"></div>
+
+	</div>
+
+	<div>Current Enemy: </div>
+
+	<div>
+		<button id="attackBtn">Attack!</button>
+	</div>
+
+	<div id="currentEnemy"><p id="currentEnemyHealth"></p></div>
+
+	<div id="outgoingDamageLog"></div>
+	<div id="incomingDamageLog"></div>
+
+	<div>Choose an enemy to attack: </div>
+
+	<div id="enemyPickerDiv" class="enemy">
+
+		<div id="kenobiEnemy" class="imgDiv"></div>
+		<div id="binksEnemy" class="imgDiv"></div>
+		<div id="vaderEnemy" class="imgDiv"></div>
+		<div id="greviousEnemy" class="imgDiv"></div>
+		<div class="imgSpacer"></div>
+
+	</div>
+
+	
+
+
+
+
+
+
+
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+</html>

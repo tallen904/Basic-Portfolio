@@ -1,0 +1,27 @@
+body {
+	background-image: url("../images/stonehaven.png");
+}
+
+.targetScore {
+	width: 200px;
+	height: 100px;
+	background: grey;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.winLoss, .currentScore {
+	font-size: 17px;
+	font-weight: bold;
+	background: teal;
+	height: 50px;
+	width: 100px;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
