@@ -9,11 +9,6 @@ var crystal2 = Math.floor(Math.random() * 12) + 1;
 var crystal3 = Math.floor(Math.random() * 12) + 1;
 var crystal4 = Math.floor(Math.random() * 12) + 1;
 
-$("#crystal1").val(crystal1);
-$("#crystal2").val(crystal2);
-$("#crystal3").val(crystal3);
-$("#crystal4").val(crystal4);
-
 
 // Functions
 function setup(){
