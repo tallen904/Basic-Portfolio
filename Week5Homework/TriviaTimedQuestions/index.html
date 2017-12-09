@@ -13,7 +13,17 @@
 	
 	<h1 class="triviaHeading">Totally Trivial Trivia!</h1>
 
-	<div>Time Remaining: 10 seconds</div>
+	<button id="startBtn" onclick="setInterval(nextQuestion, 10000)">START</button>
+
+	<div id="timer">Time Remaining: 10 seconds</div>
+
+	<form id="currentQuestion">
+		<h3 id="displayedQuestion" value="question1">What is Darth Vader's true name?</h3>
+		<input id="q1" type="radio" name="">Obi Wan Kenobi
+		<input id="q2" type="radio" name="">Anakin Skywalker
+		<input id="q3" type="radio" name="">Jar Jar Binks
+		<input id="q4" type="radio" name="">Finn
+	</form>
 
 
 <script type="text/javascript" src="./assets/js/game.js"></script>

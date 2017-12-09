@@ -4,6 +4,7 @@
 	<title>Trivial Trivia!</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -11,9 +12,70 @@
 </head>
 <body>
 
+	<div class="container">
+
 	<h1 class="triviaHeading">Totally Trivial Trivia!</h1>
 
-	<div>Time Remaining: 30 seconds</div>
+	<div id="timer">Time Remaining: 30 seconds</div>
+
+	<button id="startBtn" onclick="setTimeout(timesUp, 30000)">START</button>
+
+	<div id="questions">
+		<form id="question1">
+			<h3>What is Darth Vader's true name?</h3>
+			<input type="radio" id="q1a1" name="choice" value="obiWanKenobi">Obi-Wan Kenobi
+			<input type="radio" id="q1a2" name="choice" value="anakinSkywalker">Anakin Skywalker
+			<input type="radio" id="q1a3" name="choice" value="jarJarBinks">Jar Jar Binks
+			<input type="radio" id="q1a4" name="choice" value="finn">Finn
+		</form>
+
+		<br>
+
+		<form id="question2">
+			<h3>Who is Kylo Ren's mother?</h3>
+			<input type="radio" id="q2a1" name="choice" value="leiaOrgana">Leia Organa
+			<input type="radio" id="q2a2" name="choice" value="padmeAmidala">Padme Amidala
+			<input type="radio" id="q2a3" name="choice" value="rey">Rey
+			<input type="radio" id="q2a4" name="choice" value="monMothma">Mon Mothma
+		</form>
+
+		<br>
+
+		<form id="question3">
+			<h3>Which planet is Padme Amidala from?</h3>
+			<input type="radio" id="q3a1" name="choice" value="tatooine">Tatooine
+			<input type="radio" id="q3a2" name="choice" value="yavin4">Yavin IV
+			<input type="radio" id="q3a3" name="choice" value="naboo">Naboo
+			<input type="radio" id="q3a4" name="choice" value="coruscant">Coruscant
+		</form>
+
+		<br>
+
+		<form id="question4">
+			<h3>What is the name of Emperor Palpatine's battlestation/super weapon?</h3>
+			<input type="radio" id="q4a1" name="choice" value="starkillerBase">Starkiller Base
+			<input type="radio" id="q4a2" name="choice" value="theJediTemple">The Jedi Temple
+			<input type="radio" id="q4a3" name="choice" value="wienyHutJunior">Wieny Hut Junior
+			<input type="radio" id="q4a4" name="choice" value="theDeathStar">The Death Star
+		</form>
+			
+		<br>
+
+		<form id="question5">
+			<h3>Who trains Luke Skywalker in the Dagobah System?</h3>
+			<input type="radio" id="q5a1" name="choice" value="yoda">Yoda
+			<input type="radio" id="q5a2" name="choice" value="maceWindu">Mace Windu
+			<input type="radio" id="q5a3" name="choice" value="r2d2">R2D2
+			<input type="radio" id="q5a4" name="choice" value="quiGonnJinn">Qui-Gon Jinn
+		</form>
+	</div>
+
+	<br>
+
+	<div id="rightAnswers"></div>
+	<div id="wrongAnswers"></div>
+
+	</div>
 
 <script type="text/javascript" src="./assets/js/game.js"></script>
 </body>
