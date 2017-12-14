@@ -1,0 +1,43 @@
+h2 {
+	display: flex;
+	justify-content: center;
+}
+
+.gifDisplay {
+	display: flex;
+	margin-top: 20px;
+}
+
+.state {
+	height: 200px;
+	width: 200px;
+}
+
+.gifContentDiv {
+	text-align: center;
+	font-weight: 800;
+	text-transform: uppercase;
+	border: 2px solid black;
+	margin: 15px;
+	flex: 1;
+	padding: 10px;
+}
+
+.gifSearch {
+	display: flex;
+	justify-content: center;
+}
+
+.buttonsDiv {
+	display: flex;
+	justify-content: center;
+	margin: 20px 10px;
+}
+
+.gif {
+	margin: 10px;
+	height: 50px;
+	width: 100px;
+	text-decoration: uppercase;
+	font-weight: bolder;
+}
