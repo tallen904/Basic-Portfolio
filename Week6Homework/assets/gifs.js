@@ -64,6 +64,7 @@ function renderButtons(){
     for (var i = 0; i < gifs.length; i++) {
     	var a = $("<button>");
         a.addClass("gif");
+        a.addClass("btn");
         a.attr("data-name", gifs[i]);
         a.text(gifs[i]);
         $("#buttonsDiv").append(a);
