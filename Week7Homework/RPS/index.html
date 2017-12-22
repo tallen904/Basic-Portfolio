@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<!-- stylesheet -->
+	<link rel="stylesheet" type="text/css" href="./assets/style.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<!-- Popper.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<div class="jumbotron" style="text-align: center;">
+			<h1>Rock-Paper-Scissors Faceoff!</h1>
+		</div>
+
+		<form>
+			<input type="text" id="playerName" placeholder="Enter Your Name Here!">
+			<button type="submit" id="playerNameEntry">Submit</button>
+		</form>
+		
+		<div class="players" id="players">
+
+			<div class="playerOne" id="playerOne">
+				<div><h4 id="playerOneName"></h4></div>
+				<br>
+				<div id="p1WinLoss"></div>
+				<div id="playerOneBtns">
+					<button id="playerOneRock" value="rock">Rock</button>
+					<br>
+					<button id="playerOnePaper" value="paper">Paper</button>
+					<br>
+					<button id="playerOneScissors" value="scissors">Scissors</button>
+				</div>
+			</div>
+
+			<div class="outcome" id="outcome">
+				<div id="playerOneChoice"></div>
+				<div id="playerTwoChoice"></div>
+			</div>
+
+			<div class="playerTwo" id="playerTwo">
+				<div><h4 id="playerTwoName"></h4></div>
+				<br>
+				<div id="p2WinLoss"></div>
+				<div id="playerTwoBtns">
+					<button id="playerTwoRock" value="rock">Rock</button>
+					<br>
+					<button id="playerTwoPaper" value="paper">Paper</button>
+					<br>
+					<button id="playerTwoScissors" value="scissors">Scissors</button>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<!-- Chat -->
+
+		<div class="col-sm-3 col-sm-offset-4 frame">
+            <ul></ul>
+            <div>
+                <div class="msj-rta macro" style="margin:auto">                        
+                    <div class="text text-r" style="background:whitesmoke !important">
+                        <input class="mytext" placeholder="Type a message"/>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+	</div>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+<!-- JS File -->
+<script type="text/javascript" src="./assets/rps.js"></script>
+</body>
+</html>
