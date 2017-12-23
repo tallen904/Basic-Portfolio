@@ -27,13 +27,6 @@ connectedRef.on("value", function(snapshot){
 	}
 })
 
-connectionsRef.on("child_added", function(snapshot, prevChildKey){
-	var poon = snapshot.val()
-	var penis = snapshot.key
-	console.log(penis)
-	console.log(poon)
-})
-
 database.ref("PlayerOne").on("value", function(snapshot){
 	playerOneData = snapshot.val();
 	console.log(playerOneData);
