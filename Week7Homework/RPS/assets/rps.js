@@ -16,23 +16,33 @@ var active;
 var playerOneData;
 var playerTwoData;
 
+var connectionsRef = database.ref("/connections");
+
+var connectedRef = database.ref(".info/connected");
+
+connectedRef.on("value", function(snapshot){
+	if (snapshot.val()){
+		var con = connectionsRef.push(true);
+		con.onDisconnect().remove();
+	}
+})
+
+connectionsRef.on("child_added", function(snapshot, prevChildKey){
+	var poon = snapshot.val()
+	var penis = snapshot.key
+	console.log(penis)
+	console.log(poon)
+})
 
 database.ref("PlayerOne").on("value", function(snapshot){
 	playerOneData = snapshot.val();
 	console.log(playerOneData);
-})
-
-database.ref("PlayerOne").set({
-	name: "Player One"
+	console.log(snapshot.key)
 })
 
 database.ref("PlayerTwo").on("value", function(snapshot){
 	playerTwoData = snapshot.val();
 	console.log(playerTwoData)
-})
-
-database.ref("PlayerTwo").set({
-	name: "Player Two"
 })
 
 database.ref("PlayerActive").on("value", function(snapshot){
@@ -42,6 +52,7 @@ database.ref("PlayerActive").on("value", function(snapshot){
 var playerName;
 var wins = 0;
 var losses = 0;
+
 
 
 // database.ref("NewPlayer").push({
@@ -56,6 +67,8 @@ var losses = 0;
 
 // })
 
+
+
 $("#players").hide();
 
 $("#playerNameEntry").on("click", function(e){
@@ -66,8 +79,6 @@ $("#playerNameEntry").on("click", function(e){
 		})
 		playerName = $("#playerName").val();
 		$("#playerOneName").text(playerName);
-		$("#playerTwoName").text(playerTwoData.name);
-		$("#playerTwoName").show();
 		$("#players").show();
 		$("#playerOneBtns").show();
 		$("#playerTwoBtns").hide();
@@ -80,8 +91,6 @@ $("#playerNameEntry").on("click", function(e){
 	} else if (active.active) {
 		playerName = $("#playerName").val();
 		$("#playerTwoName").text(playerName);
-		$("#playerOneName").text(playerOneData.name);
-		$("#playerOneName").show();
 		$("#players").show();
 		$("#playerTwoBtns").show();
 		$("#playerOneBtns").hide();
@@ -93,6 +102,13 @@ $("#playerNameEntry").on("click", function(e){
 		})
 	}
 })
+
+setTimeout(function(){
+	$("#playerTwoName").show()
+	$("#playerTwoName").text(playerTwoData.name)
+	$("#playerOneName").show()
+	$("#playerOneName").text(playerOneData.name)
+}, 3000);
 
 // $("#playerNameEntry").on("click", function(e){
 // 	e.preventDefault();
