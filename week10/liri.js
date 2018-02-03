@@ -70,7 +70,7 @@ if (command === "movie-this"){
 	}
 	request.get({url: "http://www.omdbapi.com/?apikey=trilogy&t=" + extraParam}, function(err, response, body){
 		if (err){
-			console.log("Error: " + response.statusCode);
+			console.log(err);
 			logData(err);
 		}
 		var jsonResponse = JSON.parse(body)
