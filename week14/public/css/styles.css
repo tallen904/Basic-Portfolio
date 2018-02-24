@@ -1,0 +1,32 @@
+.burgerImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainDiv {
+	display: flex;
+}
+
+.leftDiv, .middleDiv, .rightDiv {
+	flex: 1;
+}
+
+.burger {
+	width: 300px;
+	height: 400px;
+}
+
+.deleteBtn {
+	margin-left: 5px;
+}
+
+.burgerDiv {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.burgerName {
+	margin-left: 10px;
+	margin-right: 10px;
+}
